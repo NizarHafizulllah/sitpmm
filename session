@@ -1,0 +1,17 @@
+Array
+(
+    [id] => 1
+    [nik] => TPMM1211002
+    [nama] => ATWIS ANDREAS HADI SAPUTRO
+    [id_divisi] => 1
+    [jenis_kelamin] => Laki-Laki
+    [alamat] => Jakarta Timur
+    [no_telp] => 085xxxxx
+    [username] => aan
+    [created_at] => 2019-11-15 22:42:56
+    [update_at] => 
+    [deleted_at] => 
+    [is_active] => 1
+    [is_deleted] => 0
+    [is_login] => 1
+)
