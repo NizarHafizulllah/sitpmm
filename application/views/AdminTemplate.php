@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php $user = $this->session->userdata('login'); ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,6 +56,10 @@
             font-size: 14px;
         }
 
+        .empat {
+            font-size: 17px;
+        }
+
         .placeholder_color::-webkit-input-placeholder {
             color: #D4D5DB;
         }
@@ -82,43 +87,33 @@
         <li class="nav-item">
             <a class="nav-link" href="<?= site_url('DashboardAdmin') ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Dashboard</span></a>
+                <span>DASHBOARD</span></a>
         </li>
 
 
-        <?php 
+        <?php
         $menu = $this->menu;
 
         foreach ($menu as $key => $value) { ?>
-            
-       <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse<?= $key; ?>" aria-expanded="true" aria-controls="collapse<?= $key; ?>">
-                <i class="<?php echo $value['icon']; ?>"></i>
-                <span><?php echo $value['menu']; ?></span>
-            </a>
-            <div id="collapse<?= $key; ?>" class="collapse" aria-labelledby="heading<?= $key; ?>" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <?php 
-                        foreach ($value['submenu'] as $key1 => $value1) { ?>
-                           <a class="collapse-item" href="<?= site_url($value1['url']); ?>"><i class="fas fa-fw fa-caret-right"></i><?php echo $value1['sub_menu'] ?></a>
-                       <?php }
-                    ?>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse<?= $key; ?>" aria-expanded="true" aria-controls="collapse<?= $key; ?>">
+                    <i class="<?php echo $value['icon']; ?>"></i>
+                    <span><?php echo $value['menu']; ?></span>
+                </a>
+                <div id="collapse<?= $key; ?>" class="collapse" aria-labelledby="heading<?= $key; ?>" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <?php
+                            foreach ($value['submenu'] as $key1 => $value1) { ?>
+                            <a class="collapse-item" href="<?= site_url($value1['url']); ?>"><i class="fas fa-fw fa-caret-right"></i><?php echo $value1['sub_menu'] ?></a>
+                        <?php }
+                            ?>
+                    </div>
                 </div>
-            </div>
-        </li>
+            </li>
 
-       <?php }
+        <?php }
         ?>
-
-       
-        
-
-       
-
-       
-
-      
-
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
@@ -180,27 +175,26 @@
             <!-- End of Topbar -->
 
             <!-- Logout Modal-->
-          
 
             <!-- content -->
             <?php echo $content; ?>
 
             <!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
 
-<!-- Footer -->
-<footer class="sticky-footer bg-white">
-    <div class="container my-auto">
-        <div class="copyright text-right">
-            <span>Copyright &copy; e-Form <?= date('Y') ?></span>
-        </div>
-    </div>
-</footer>
-<!-- End of Footer -->
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-right">
+                        <span>Copyright &copy; e-Form <?= date('Y') ?></span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
 
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -228,19 +222,13 @@
                 </div>
             </div>
 
-</div>
-<!-- End of Content Wrapper -->
+        </div>
+        <!-- End of Content Wrapper -->
 
-</div>
-<!-- End of Page Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+    <!-- Bootstrap core JavaScript-->
 
-<!-- Bootstrap core JavaScript-->
-
-
-
-
-
-
-</body>
+    </body>
 
 </html>

@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class DashboardAdmin extends AdminController
+class Profile extends AdminController
 {
 
   public function __construct()
@@ -13,7 +13,7 @@ class DashboardAdmin extends AdminController
   function index()
   {
     $data = array();
-    $data['title'] = "Dashboard";
+    $data['title'] = "Profile";
     $content = $this->load->view($this->controller . "View", $data, true);
     $this->set_title($data['title']);
     $this->set_content($content);

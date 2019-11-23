@@ -1,3 +1,7 @@
+<style>
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #5a5c69), to(#373840));
+</style>
+
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> -->
 <script src="<?php echo base_url('assets/js'); ?>/sweetalert29.js"></script>
 <div class="container">

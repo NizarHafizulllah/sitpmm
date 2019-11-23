@@ -31,20 +31,19 @@
                                 </thead>
 
                                 <tbody class="dua text-center">
-                                   
-                                        <tr>
-                                            <td class="align-middle">1</td>
-                                            <td class="align-middle">KS9023</td>
-                                            <td class="align-middle">BARNAG</td>
-                                            <td class="align-middle text-right">150000</td>
-                                            <td class="align-middle">SUPLIER</td>
-                                            <td class="text-center align-middle" width="160px">
-                                                <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModalLong" title="Detail data"><i class="fas fa-folder-open fa-sm text-white"></i></button>
-                                                <button type="button" class="btn btn-warning btn-sm" title="Edit data"><i class="fas fa-edit fa-sm text-white"></i></button>
-                                                <button type="button" class="btn btn-danger btn-sm" title="Hapus data"><i class="fas fa-trash-alt fa-sm text-white"></i></button>
-                                            </td>
-                                        </tr>
-                                   
+                                    <tr>
+                                        <td class="align-middle">1</td>
+                                        <td class="align-middle">KS9023</td>
+                                        <td class="align-middle">BARNAG</td>
+                                        <td class="align-middle text-right">150000</td>
+                                        <td class="align-middle">SUPLIER</td>
+                                        <td class="text-center align-middle" width="160px">
+                                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModalLong" title="Detail data"><i class="fas fa-folder-open fa-sm text-white"></i></button>
+                                            <button type="button" class="btn btn-warning btn-sm" title="Edit data"><i class="fas fa-edit fa-sm text-white"></i></button>
+                                            <button type="button" class="btn btn-danger btn-sm" title="Hapus data"><i class="fas fa-trash-alt fa-sm text-white"></i></button>
+                                        </td>
+                                    </tr>
+
                                 </tbody>
                             </table>
                         </div>
